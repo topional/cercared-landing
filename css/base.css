@@ -23,12 +23,11 @@ html {
   scroll-padding-top: calc(var(--header-height) + 24px);
 }
 
-/* Updated body schema to enable elastic layout alignment */
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   color: var(--color-text);
-  background: var(--color-background); /* Uses the intended F8FAFC light shade */
+  background: var(--color-background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
