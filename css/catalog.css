@@ -1,0 +1,87 @@
+/*Services Grid Architecture (3 columns setup)*/
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Kebab-case tags in English */
+.tag {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.tag-food, .tag-health, .tag-housing, .tag-education, .tag-social {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+.service-card h2 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.service-card .subtitle {
+  font-size: 11px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.service-card .description {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/*Action Buttons inside cards */
+.btn-primary {
+  background-color: #1e40af;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1e40af;
+  border: 1px solid #1e40af;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*Media Queries (Responsive Cards System)*/
+@media (max-width: 968px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

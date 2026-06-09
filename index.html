@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CercaRed | Servicios sociales del Estado</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="navbar" aria-label="Navegación principal">
-        <a class="brand" href="#inicio" aria-label="CercaRed inicio">
-          <img class="brand-logo" src="assets/images/logo.png" alt="CercaRed" />
-        </a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CercaRed | Servicios sociales del Estado</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
 
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <img
-            class="nav-toggle-icon"
-            src="assets/icons/menu.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </button>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="CercaRed inicio">
+        <img class="brand-logo" src="assets/images/logo.png" alt="CercaRed" />
+      </a>
 
-        <div class="nav-menu" id="nav-menu">
-          <a href="#servicios">Servicios</a>
-          <a href="#como-funciona">Cómo funciona</a>
-          <a href="#modo-simple">Modo simple</a>
-          <a href="#ayuda">Ayuda</a>
-          <a href="#acceso">Acceso</a>
-        </div>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <img
+          class="nav-toggle-icon"
+          src="assets/icons/menu.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
 
-        <a class="nav-cta" href="#servicios">Buscar servicios</a>
-      </nav>
-    </header>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#modo-simple">Modo simple</a>
+        <a href="#ayuda">Ayuda</a>
+        <a href="#acceso">Acceso</a>
+      </div>
 
-    <main>
-      <section id="inicio"></section>
-      <section id="servicios"></section>
-      <section id="como-funciona"></section>
-      <section id="modo-simple"></section>
-      <section id="ayuda"></section>
-      <section id="acceso"></section>
-    </main>
+      <a class="nav-cta" href="#servicios">Buscar servicios</a>
+    </nav>
+  </header>
 
-    <script src="js/navbar.js"></script>
-  </body>
+  <main style="display: flex; justify-content: center; align-items: center; padding: 60px 20px;">
+    <div style="text-align: center; color: var(--color-muted);">
+      <h1 style="color: var(--color-text); font-size: 2.2rem; margin-bottom: 12px;">Welcome to CercaRed</h1>
+      <p>The main landing sections will be modularly displayed here.</p>
+    </div>
+    
+    <section id="inicio"></section>
+    <section id="servicios"></section>
+    <section id="como-funciona"></section>
+    <section id="modo-simple"></section>
+    <section id="ayuda"></section>
+    <section id="acceso"></section>
+  </main>
+
+  <main-footer></main-footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+</body>
 </html>
