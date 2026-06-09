@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  width: min(100% - 32px, var(--container));
+  width: min(100% - 128px, var(--container));
   min-height: var(--header-height);
   margin: 0 auto;
   display: flex;
@@ -96,6 +96,7 @@
   }
 
   .navbar {
+    width: min(100% - 32px, var(--container));
     min-height: var(--header-height);
     justify-content: space-between;
     gap: 16px;
