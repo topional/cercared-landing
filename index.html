@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
   
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
   <link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
@@ -48,13 +49,32 @@
     </nav>
   </header>
 
-  <main style="display: flex; justify-content: center; align-items: center; padding: 60px 20px;">
-    <div style="text-align: center; color: var(--color-muted);">
-      <h1 style="color: var(--color-text); font-size: 2.2rem; margin-bottom: 12px;">Welcome to CercaRed</h1>
-      <p>The main landing sections will be modularly displayed here.</p>
-    </div>
-    
-    <section id="inicio"></section>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Encuentra servicios sociales cerca de ti</h1>
+        <p class="hero-description">
+          CercaRed es la plataforma oficial de orientación social institucional
+          que conecta a los ciudadanos con los recursos públicos y comunitarios
+          que necesitan. Acceso directo, verificado y cercano.
+        </p>
+
+        <div class="hero-actions">
+          <a class="hero-primary-action" href="#servicios">Buscar servicios</a>
+          <a class="hero-secondary-action" href="#como-funciona">
+            Cómo funciona
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img
+          src="assets/images/hero.png"
+          alt="Una joven ayuda a un adulto mayor a consultar información desde un celular"
+        />
+      </div>
+    </section>
+
     <section id="servicios"></section>
     <section id="como-funciona"></section>
     <section id="modo-simple"></section>
