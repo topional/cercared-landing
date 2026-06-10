@@ -13,7 +13,10 @@ class AppFooter extends HTMLElement {
           
           <!-- Enlaces de navegación -->
           <nav class='footer-nav'>
-            <a href='#official-sources' class='footer-link'>Fuentes oficiales</a>
+            <a href='#official-sources' class='footer-link'>
+              <span class='desktop-text'>Fuentes oficiales</span>
+              <span class='mobile-text'>Fuentes</span>
+            </a>
             <a href='#terms' class='footer-link'>Términos</a>
             <a href='#privacy' class='footer-link'>Privacidad</a>
             <a href='#contact' class='footer-link'>Contacto</a>
