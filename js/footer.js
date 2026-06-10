@@ -4,12 +4,14 @@ class AppFooter extends HTMLElement {
       <footer class='main-footer'>
         <div class='footer-container'>
           
-          <!-- Logo pulling asset from images folder -->
+          <!-- Imagen del logo reemplazando el texto anterior -->
           <div class='footer-logo'>
-            <img src='assets/images/logo.png' alt='CercaRed Logo' class='logo-image'>
+            <a href='#inicio' aria-label='CercaRed Inicio'>
+              <img src='assets/images/logofooter.png' alt='CercaRed Logo' class='logo-image'>
+            </a>
           </div>
           
-          <!-- Navigation Links -->
+          <!-- Enlaces de navegación -->
           <nav class='footer-nav'>
             <a href='#official-sources' class='footer-link'>Fuentes oficiales</a>
             <a href='#terms' class='footer-link'>Términos</a>
