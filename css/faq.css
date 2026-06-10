@@ -1,0 +1,137 @@
+/* ==========================================================================
+   FAQ Section Styles (Base / Desktop)
+   ========================================================================== */
+.faq-section {
+  width: 100%;
+  padding: 80px 64px;
+  background-color: var(--color-surface, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 40px 0;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 680px; /* Centra y limita el ancho como en tu captura original */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Separación entre cada caja de pregunta */
+}
+
+/* --- Estilos del Acordeón (<details>) --- */
+.faq-accordion {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #E5E7EB; /* Borde gris fino del diseño */
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+/* Quita la flecha por defecto de los navegadores */
+.faq-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* --- Estilo de la Pregunta (<summary>) --- */
+.faq-question {
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; /* Oculta flecha estándar en Firefox */
+  user-select: none;
+}
+
+/* --- Icono de Flecha Personalizado --- */
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* Dibujamos la flecha apuntando hacia abajo con puro CSS (un ángulo) */
+.faq-icon::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: rotate(45deg);
+}
+
+/* Cuando el acordeón está abierto ([open]), la flecha gira hacia arriba */
+.faq-accordion[open] .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Cuando está abierto, podemos resaltar el borde si queremos */
+.faq-accordion[open] {
+  border-color: #D1D5DB;
+}
+
+/* --- Estilo de la Respuesta (Contenido Desplegado) --- */
+.faq-answer {
+  padding: 0 24px 24px 24px; /* Relleno interno respetando los lados y abajo */
+  border-top: 1px solid #E5E7EB; /* Línea divisoria interna al abrirse */
+}
+
+.faq-answer p {
+  margin: 24px 0 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   Media Queries (Responsive Mobile System Setup)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 56px 24px; /* Menos espacio arriba/abajo en celulares */
+  }
+
+  .faq-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .faq-container {
+    padding: 0;
+  }
+
+  .faq-question {
+    padding: 20px 16px;
+    font-size: 22px; /* Agranda ligeramente el texto en móviles como tu captura */
+    line-height: 28px;
+  }
+
+  .faq-answer {
+    padding: 0 16px 20px 16px;
+  }
+  
+  .faq-answer p {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
