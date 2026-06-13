@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/featured-services.css" /> <!-- Enlace a los nuevos estilos -->
   <link rel="stylesheet" href="css/how-works.css" />
+  <link rel="stylesheet" href="css/simple-mode.css" />
   <link rel="stylesheet" href="css/verified.css" />
   <link rel="stylesheet" href="css/faq.css" />
   <link rel="stylesheet" href="css/footer.css" />
@@ -53,6 +55,7 @@
   </header>
 
   <main>
+    <!--SECCIÓN HERO-->
     <section class="hero" id="inicio">
       <div class="hero-content">
         <h1>Encuentra servicios sociales cerca de ti</h1>
@@ -78,47 +81,122 @@
       </div>
     </section>
 
-<section class="how-section" id="como-funciona">
+    <!--NUEVA SECCIÓN: SERVICIOS DESTACADOS-->
+    <section class="services-section" id="servicios">
+      <h2 class="services-main-title">Servicios destacados</h2>
+      
+      <div class="services-container">
+        <!--Card 1: Apoyo Alimentario-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/ApoyoAlimentarioLogo.png" alt="Icono Apoyo Alimentario" class="service-icon">
+          </div>
+          <h3 class="service-title">Apoyo alimentario</h3>
+          <p class="service-description">
+            Encuentra comedores populares, programas de alimentación y orientación para familias que necesitan apoyo básico.
+          </p>
+          <a href="#" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+
+        <!--Card 2: Atención de salud-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/AtencionDeSaludLogo.png" alt="Icono Atención de salud" class="service-icon">
+          </div>
+          <h3 class="service-title">Atencion de salud</h3>
+          <p class="service-description">
+            Consulta servicios de salud, afiliación, campañas médicas y canales de atención según tu ubicación.
+          </p>
+          <a href="#" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+
+        <!--Card 3: Apoyo educativo-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/ApoyoEducativoLogo.png" alt="Icono Apoyo educativo" class="service-icon">
+          </div>
+          <h3 class="service-title">Apoyo educativo</h3>
+          <p class="service-description">
+            Revisa becas, orientación educativa, programas de capacitación y beneficios para estudiantes o familias.
+          </p>
+          <a href="#" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+
+        <!--Card 4: Vivienda-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/ViviendaLogo.png" alt="Icono Vivienda" class="service-icon">
+          </div>
+          <h3 class="service-title">Vivienda</h3>
+          <p class="service-description">
+            Accede a información sobre programas de vivienda, apoyo habitacional y requisitos para postular.
+          </p>
+          <a href="#" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN CÓMO FUNCIONA-->
+    <section class="how-section" id="como-funciona">
       <h2 class="how-main-title">Cómo funciona</h2>
       
       <div class="how-container">
-        
-        <!-- Paso 1 -->
         <div class="how-step">
           <img class="how-step-image" src="assets/images/1.png" alt="Paso 1" />
           <h3 class="how-step-title">Busca</h3>
           <p class="how-step-text">Escribe el servicio, beneficio o ayuda que necesitas encontrar.</p>
         </div>
 
-        <!-- Paso 2 -->
         <div class="how-step">
           <img class="how-step-image" src="assets/images/2.png" alt="Paso 2" />
           <h3 class="how-step-title">Filtra</h3>
           <p class="how-step-text">Selecciona una categoría o distrito para ver opciones más relevantes.</p>
         </div>
 
-        <!-- Paso 3 -->
         <div class="how-step">
           <img class="how-step-image" src="assets/images/3.png" alt="Paso 3" />
           <h3 class="how-step-title">Revisa</h3>
           <p class="how-step-text">Consulta requisitos, pasos y canales de atención en una sola vista.</p>
         </div>
 
-        <!-- Paso 4 -->
         <div class="how-step">
           <img class="how-step-image" src="assets/images/4.png" alt="Paso 4" />
           <h3 class="how-step-title">Accede</h3>
           <p class="how-step-text">Ingresa al canal oficial para confirmar la información o iniciar el trámite.</p>
         </div>
-
       </div>
     </section>
 
-    <section id="servicios"></section>
-    <section id="como-funciona"></section>
-    <section id="modo-simple"></section>
+    <!--SECCIÓN MODO SIMPLE-->
+    <section class="simple-section" id="modo-simple">
+      <div class="simple-container">
+        <div class="simple-content">
+          <h2 class="simple-title">Modo simple</h2>
+          <p class="simple-text">
+            Una vista más clara, con textos grandes, menos elementos visuales y acciones principales visibles para encontrar servicios sin dificultad.
+          </p>
+          <a href="#" class="btn-simple-mode">Modo simple</a>
+        </div>
+        <div class="simple-visual">
+          <img src="assets/images/persona.png" alt="Icono de accesibilidad - Persona" class="simple-image" />
+        </div>
+      </div>
+    </section>
 
-<section class="verified-section">
+    <!--SECCIÓN INFORMACIÓN VERIFICADA-->
+    <section class="verified-section">
       <div class="verified-container">
         <div class="verified-header">
           <img class="verified-icon" src="assets/images/shield.png" alt="Escudo de verificación" />
@@ -130,11 +208,11 @@
       </div>
     </section>
 
+    <!--SECCIÓN PREGUNTAS FRECUENTES-->
     <section class="faq-section" id="ayuda">
       <h2 class="faq-title">Preguntas frecuentes</h2>
       
       <div class="faq-container">
-        
         <details class="faq-accordion">
           <summary class="faq-question">
             ¿CercaRed es una página del Gobierno?
@@ -164,7 +242,6 @@
             <p>No. Somos una guía de orientación que simplifica requisitos y pasos de programas oficiales. Te ayudamos a entender qué necesitas y te conectamos directamente con el canal oficial de la entidad responsable para que realices tu gestión con seguridad y sin confusiones.</p>
           </div>
         </details>
-
       </div>
     </section>
     
