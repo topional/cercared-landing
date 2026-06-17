@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CercaRed | Servicios sociales del Estado</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/featured-services.css" /> <!-- Enlace a los nuevos estilos -->
+  <link rel="stylesheet" href="css/how-works.css" />
+  <link rel="stylesheet" href="css/simple-mode.css" />
+  <link rel="stylesheet" href="css/verified.css" />
+  <link rel="stylesheet" href="css/faq.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="CercaRed inicio">
+        <img class="brand-logo" src="assets/images/logo.png" alt="CercaRed" />
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <img
+          class="nav-toggle-icon"
+          src="assets/icons/menu.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#modo-simple">Modo simple</a>
+        <a href="#ayuda">Ayuda</a>
+        <a href="#acceso">Acceso</a>
+      </div>
+
+      <a class="nav-cta" href="https://cercared-webapp-nybi.vercel.app/index.html">Buscar servicios</a>
+    </nav>
+  </header>
+
+  <main>
+    <!--SECCIÓN HERO-->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Encuentra servicios sociales cerca de ti</h1>
+        <p class="hero-description">
+          CercaRed es la plataforma oficial de orientación social institucional
+          que conecta a los ciudadanos con los recursos públicos y comunitarios
+          que necesitan. Acceso directo, verificado y cercano.
+        </p>
+
+        <div class="hero-actions">
+          <a class="hero-primary-action" href="https://cercared-webapp-nybi.vercel.app/index.html">Buscar servicios</a>
+          <a class="hero-secondary-action" href="#como-funciona">
+            Cómo funciona
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img
+          src="assets/images/hero.png"
+          alt="Una joven ayuda a un adulto mayor a consultar información desde un celular"
+        />
+      </div>
+    </section>
+
+    <!--NUEVA SECCIÓN: SERVICIOS DESTACADOS-->
+    <section class="services-section" id="servicios">
+      <h2 class="services-main-title">Servicios destacados</h2>
+      
+      <div class="services-container">
+        <!--Card 1: Apoyo Alimentario-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/ApoyoAlimentarioLogo.png" alt="Icono Apoyo Alimentario" class="service-icon">
+          </div>
+          <h3 class="service-title">Apoyo alimentario</h3>
+          <p class="service-description">
+            Encuentra comedores populares, programas de alimentación y orientación para familias que necesitan apoyo básico.
+          </p>
+          <a href="https://cercared-webapp-nybi.vercel.app/index.html?category=Social" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+
+        <!--Card 2: Atención de salud-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/AtencionDeSaludLogo.png" alt="Icono Atención de salud" class="service-icon">
+          </div>
+          <h3 class="service-title">Atencion de salud</h3>
+          <p class="service-description">
+            Consulta servicios de salud, afiliación, campañas médicas y canales de atención según tu ubicación.
+          </p>
+          <a href="https://cercared-webapp-nybi.vercel.app/index.html?category=Salud" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+
+        <!--Card 3: Apoyo educativo-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/ApoyoEducativoLogo.png" alt="Icono Apoyo educativo" class="service-icon">
+          </div>
+          <h3 class="service-title">Apoyo educativo</h3>
+          <p class="service-description">
+            Revisa becas, orientación educativa, programas de capacitación y beneficios para estudiantes o familias.
+          </p>
+          <a href="https://cercared-webapp-nybi.vercel.app/index.html?category=Educaci%C3%B3n" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+
+        <!--Card 4: Vivienda-->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/ViviendaLogo.png" alt="Icono Vivienda" class="service-icon">
+          </div>
+          <h3 class="service-title">Vivienda</h3>
+          <p class="service-description">
+            Accede a información sobre programas de vivienda, apoyo habitacional y requisitos para postular.
+          </p>
+          <a href="https://cercared-webapp-nybi.vercel.app/index.html?category=Vivienda" class="service-link">
+            <span>Ver servicios</span>
+            <img src="assets/images/FechaAdelante.png" alt="Flecha" class="arrow-icon">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN CÓMO FUNCIONA-->
+    <section class="how-section" id="como-funciona">
+      <h2 class="how-main-title">Cómo funciona</h2>
+      
+      <div class="how-container">
+        <div class="how-step">
+          <img class="how-step-image" src="assets/images/1.png" alt="Paso 1" />
+          <h3 class="how-step-title">Busca</h3>
+          <p class="how-step-text">Escribe el servicio, beneficio o ayuda que necesitas encontrar.</p>
+        </div>
+
+        <div class="how-step">
+          <img class="how-step-image" src="assets/images/2.png" alt="Paso 2" />
+          <h3 class="how-step-title">Filtra</h3>
+          <p class="how-step-text">Selecciona una categoría o distrito para ver opciones más relevantes.</p>
+        </div>
+
+        <div class="how-step">
+          <img class="how-step-image" src="assets/images/3.png" alt="Paso 3" />
+          <h3 class="how-step-title">Revisa</h3>
+          <p class="how-step-text">Consulta requisitos, pasos y canales de atención en una sola vista.</p>
+        </div>
+
+        <div class="how-step">
+          <img class="how-step-image" src="assets/images/4.png" alt="Paso 4" />
+          <h3 class="how-step-title">Accede</h3>
+          <p class="how-step-text">Ingresa al canal oficial para confirmar la información o iniciar el trámite.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN MODO SIMPLE-->
+    <section class="simple-section" id="modo-simple">
+      <div class="simple-container">
+        <div class="simple-content">
+          <h2 class="simple-title">Modo simple</h2>
+          <p class="simple-text">
+            Una vista más clara, con textos grandes, menos elementos visuales y acciones principales visibles para encontrar servicios sin dificultad.
+          </p>
+          <button class="btn-simple-mode" type="button" disabled aria-disabled="true">Modo simple</button>
+        </div>
+        <div class="simple-visual">
+          <img src="assets/images/persona.png" alt="Icono de accesibilidad - Persona" class="simple-image" />
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN INFORMACIÓN VERIFICADA-->
+    <section class="verified-section">
+      <div class="verified-container">
+        <div class="verified-header">
+          <img class="verified-icon" src="assets/images/shield.png" alt="Escudo de verificación" />
+          <h2 class="verified-title">Información 100% verificada</h2>
+        </div>
+        <p class="verified-text">
+          Mostramos datos obtenidos de canales institucionales y enlaces oficiales para que puedas consultar requisitos, pasos y formas de atención con mayor confianza
+        </p>
+      </div>
+    </section>
+
+    <!--SECCIÓN PREGUNTAS FRECUENTES-->
+    <section class="faq-section" id="ayuda">
+      <h2 class="faq-title">Preguntas frecuentes</h2>
+      
+      <div class="faq-container">
+        <details class="faq-accordion">
+          <summary class="faq-question">
+            ¿CercaRed es una página del Gobierno?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>No. Somos una guía de orientación que simplifica requisitos y pasos de programas oficiales. Te ayudamos a entender qué necesitas y te conectamos directamente con el canal oficial de la entidad responsable para que realices tu gestión con seguridad y sin confusiones.</p>
+          </div>
+        </details>
+
+        <details class="faq-accordion">
+          <summary class="faq-question">
+            ¿Qué es el "Modo Simple" y cómo lo activo?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>El "Modo Simple" es una configuración de visualización diseñada para facilitar la lectura. Adapta los tamaños de fuente, aumenta los contrastes y simplifica los menús de navegación. Puedes activarlo directamente desde el botón ubicado en la barra superior de la página.</p>
+          </div>
+        </details>
+
+        <details class="faq-accordion">
+          <summary class="faq-question">
+            ¿CercaRed realiza los trámites por mí?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>No. Somos una guía de orientación que simplifica requisitos y pasos de programas oficiales. Te ayudamos a entender qué necesitas y te conectamos directamente con el canal oficial de la entidad responsable para que realices tu gestión con seguridad y sin confusiones.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+    
+    <section id="acceso"></section>
+  </main>
+
+  <main-footer></main-footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
