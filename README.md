@@ -37,7 +37,7 @@ Plataforma web que ayuda a las personas a encontrar información clara y verific
 
 > No necesita instalación ni servidor: es un sitio estático.
 
-**Versión desplegada:** <https://USUARIO.github.io/cercared/>
+**Versión desplegada:** <https://github.com/topional/cercared-landing>
 
 ## Estructura del proyecto
 
