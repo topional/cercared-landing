@@ -50,11 +50,13 @@
   font-weight: 600;
   text-decoration: none;
   padding: 16px 36px;
+  border: 0;
   border-radius: 8px;
+  cursor: default;
   transition: background-color 0.2s ease;
 }
 
-.btn-simple-mode:hover {
+.btn-simple-mode:not(:disabled):hover {
   background-color: #163A69;
 }
 
